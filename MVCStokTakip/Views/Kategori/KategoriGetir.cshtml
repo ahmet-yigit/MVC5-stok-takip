@@ -1,0 +1,21 @@
+﻿@model MVCStokTakip.Models.Entity.TBLKategori
+@{
+    ViewBag.Title = "KategoriGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kategori Güncelleme Sayfası</h2>
+<br />
+
+
+@using (Html.BeginForm("KategoriGüncelle", "Kategori", FormMethod.Post))
+{
+
+    @Html.HiddenFor(x => x.id, new { @class = "form-control" })
+    <br />
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+}
+
+

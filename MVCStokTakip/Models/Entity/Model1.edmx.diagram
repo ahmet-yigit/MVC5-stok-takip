@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2c1e0bea41ab4dadbb0f0d6a555fc204" Name="Diagram1">
+        <EntityTypeShape EntityType="DbMvcStokTakipModel.TBLKategori" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbMvcStokTakipModel.TBLMusteri" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbMvcStokTakipModel.TBLPersonel" Width="1.5" PointX="10.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbMvcStokTakipModel.TBLSatislar" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbMvcStokTakipModel.TBLUrunler" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="DbMvcStokTakipModel.FK_TBLUrunler_TBLKategori" ManuallyRouted="false" />
+        <AssociationConnector Association="DbMvcStokTakipModel.FK_TBLSatislar_TBLMusteri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbMvcStokTakipModel.FK_TBLSatislar_TBLPersonel" ManuallyRouted="true" >
+          <ConnectorPoint PointX="10.125" PointY="1.4901432291666659" />
+          <ConnectorPoint PointX="9.71" PointY="1.4901432291666659" />
+          <ConnectorPoint PointX="9.71" PointY="0.27139322916666586" />
+          <ConnectorPoint PointX="6.956666666666667" PointY="0.27139322916666586" />
+          <ConnectorPoint PointX="6.956666666666667" PointY="1.4901432291666659" />
+          <ConnectorPoint PointX="6.5" PointY="1.4901432291666659" />
+        </AssociationConnector>
+        <AssociationConnector Association="DbMvcStokTakipModel.FK_TBLSatislar_TBLUrunler" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
