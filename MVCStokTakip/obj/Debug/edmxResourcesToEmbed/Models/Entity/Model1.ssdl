@@ -48,6 +48,7 @@
     <Property Name="alisfiyat" Type="decimal" Precision="18" Scale="2" />
     <Property Name="satisfiyat" Type="decimal" Precision="18" Scale="2" />
     <Property Name="kategori" Type="int" />
+    <Property Name="durum" Type="bit" />
   </EntityType>
   <Association Name="FK_TBLSatislar_TBLMusteri">
     <End Role="TBLMusteri" Type="Self.TBLMusteri" Multiplicity="0..1" />

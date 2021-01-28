@@ -1,4 +1,4 @@
-﻿
+﻿@model MVCStokTakip.Models.Entity.TBLUrunler
 @{
     ViewBag.Title = "YeniKategori";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,9 +7,10 @@
 <h2>Yeni Kategori Ekleme Sayfası</h2>
 <br />
 
-<form class="form-group" method="post">
+<form method="post">
     <label>Kategori Adını Giriniz</label>
-    <input type="text" class="form-control" name="ad" />
+    <input type="text" name="ad" value="" class="form-control" />
+    @*@Html.TextBoxFor(x => x.ad, new { @class = "form-control" })*@
     <br />
     <button class="btn btn-info">Kaydet</button>
 </form>

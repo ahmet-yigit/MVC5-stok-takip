@@ -45,6 +45,7 @@
     <EntitySetMapping Name="TBLUrunler">
       <EntityTypeMapping TypeName="DbMvcStokTakipModel.TBLUrunler">
         <MappingFragment StoreEntitySet="TBLUrunler">
+          <ScalarProperty Name="durum" ColumnName="durum" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="ad" ColumnName="ad" />
           <ScalarProperty Name="marka" ColumnName="marka" />

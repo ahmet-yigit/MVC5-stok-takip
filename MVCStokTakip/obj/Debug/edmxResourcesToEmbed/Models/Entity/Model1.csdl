@@ -56,6 +56,7 @@
     <Property Name="kategori" Type="Int32" />
     <NavigationProperty Name="TBLKategori" Relationship="Self.FK_TBLUrunler_TBLKategori" FromRole="TBLUrunler" ToRole="TBLKategori" />
     <NavigationProperty Name="TBLSatislar" Relationship="Self.FK_TBLSatislar_TBLUrunler" FromRole="TBLUrunler" ToRole="TBLSatislar" />
+    <Property Name="durum" Type="Boolean" />
   </EntityType>
   <Association Name="FK_TBLUrunler_TBLKategori">
     <End Role="TBLKategori" Type="Self.TBLKategori" Multiplicity="0..1" />
