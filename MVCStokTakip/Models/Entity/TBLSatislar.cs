@@ -22,7 +22,7 @@ namespace MVCStokTakip.Models.Entity
         public Nullable<System.DateTime> tarih { get; set; }
     
         public virtual TBLMusteri TBLMusteri { get; set; }
-        public virtual TBLPersonel TBLPersonel { get; set; }
         public virtual TBLUrunler TBLUrunler { get; set; }
+        public virtual TBLPersonel TBLPersonel { get; set; }
     }
 }

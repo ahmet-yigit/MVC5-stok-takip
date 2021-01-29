@@ -25,6 +25,7 @@ namespace MVCStokTakip.Models.Entity
         public string soyad { get; set; }
         public string sehir { get; set; }
         public Nullable<decimal> bakiye { get; set; }
+        public Nullable<bool> durum { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLSatislar> TBLSatislar { get; set; }

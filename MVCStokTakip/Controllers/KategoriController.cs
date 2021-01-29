@@ -10,6 +10,7 @@ namespace MVCStokTakip.Controllers
     {
         // GET: Kategori
         DbMvcStokTakipEntities db = new DbMvcStokTakipEntities();
+        [Authorize]
         public ActionResult Index()
         {
             var kategoriler = db.TBLKategori.ToList();

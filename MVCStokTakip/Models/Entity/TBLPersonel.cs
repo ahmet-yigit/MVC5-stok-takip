@@ -22,7 +22,7 @@ namespace MVCStokTakip.Models.Entity
     
         public int id { get; set; }
         public string ad { get; set; }
-        public byte[] soyad { get; set; }
+        public string soyad { get; set; }
         public string departman { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

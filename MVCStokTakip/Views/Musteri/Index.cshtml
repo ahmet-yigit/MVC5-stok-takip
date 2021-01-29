@@ -1,5 +1,7 @@
 ﻿@using MVCStokTakip.Models.Entity;
-@model List<TBLMusteri>
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<TBLMusteri>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -33,5 +35,7 @@
         }
     </tbody>
 </table>
-<a href="/Kategori/YeniKategori" class="btn btn-primary">Kategori Ekle</a>
+@Html.PagedListPager((IPagedList)Model,sayfa=>Url.Action("Index", new { sayfa }))
+<br />
+<a href="/Musteri/YeniMusteri" class="btn btn-primary">Müşteri Ekle</a>
 

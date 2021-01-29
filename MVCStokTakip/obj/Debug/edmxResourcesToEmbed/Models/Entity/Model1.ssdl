@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DbMvcStokTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBLAdmin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kullanici" Type="varchar" MaxLength="50" />
+    <Property Name="sifre" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="TBLKategori">
     <Key>
       <PropertyRef Name="id" />
@@ -16,6 +24,7 @@
     <Property Name="soyad" Type="varchar" MaxLength="30" />
     <Property Name="sehir" Type="varchar" MaxLength="15" />
     <Property Name="bakiye" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="durum" Type="bit" />
   </EntityType>
   <EntityType Name="TBLPersonel">
     <Key>
@@ -23,7 +32,7 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ad" Type="varchar" MaxLength="50" />
-    <Property Name="soyad" Type="varbinary" MaxLength="50" />
+    <Property Name="soyad" Type="varchar" MaxLength="50" />
     <Property Name="departman" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="TBLSatislar">
@@ -99,6 +108,7 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="DbMvcStokTakipModelStoreContainer">
+    <EntitySet Name="TBLAdmin" EntityType="Self.TBLAdmin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBLKategori" EntityType="Self.TBLKategori" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBLMusteri" EntityType="Self.TBLMusteri" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBLPersonel" EntityType="Self.TBLPersonel" Schema="dbo" store:Type="Tables" />

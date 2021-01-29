@@ -11,10 +11,17 @@ namespace MVCStokTakip.Controllers
     {
         // GET: Urun
         DbMvcStokTakipEntities db = new DbMvcStokTakipEntities();
-        public ActionResult Index()
+        [Authorize]
+        public ActionResult Index(string p)
         {
-            var dgr = db.TBLUrunler.Where(x => x.durum == true).ToList();
-            return View(dgr);
+            //var dgr = db.TBLUrunler.Where(x => x.durum == true).ToList();
+            //arama alanı için gerekli kod satırları
+            var urunler = db.TBLUrunler.Where(x => x.durum == true);
+            if (!string.IsNullOrEmpty(p))
+            {
+                urunler = urunler.Where(x => x.ad.Contains(p) && x.durum == true);
+            }
+            return View(urunler.ToList());
         }
 
         [HttpGet]

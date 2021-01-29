@@ -7,7 +7,13 @@
 
 <h2>Ürünler</h2>
 <br />
-
+@using (Html.BeginForm("Index", "Urun", FormMethod.Post))
+{
+    <p>
+        Ürün Adı: @Html.TextBox("p")
+        <input type="submit" name="name" value="Ara" />
+    </p>
+}
 <table class="table table-bordered">
     <tr>
         <th>ID</th>
@@ -34,7 +40,7 @@
                 <td><a href="/Urun/UrunSil/@x.id" class="btn btn-danger">Sil</a></td>
                 <td><a href="/Urun/UrunGetir/@x.id" class="btn btn-info">Güncelle</a></td>
             </tr>
-        }
+            }
     </tbody>
 </table>
 <a href="/Urun/YeniUrun" class="btn btn-primary">Ürün Ekle</a>

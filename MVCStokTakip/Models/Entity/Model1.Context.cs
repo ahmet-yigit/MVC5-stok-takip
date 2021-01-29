@@ -27,8 +27,9 @@ namespace MVCStokTakip.Models.Entity
     
         public virtual DbSet<TBLKategori> TBLKategori { get; set; }
         public virtual DbSet<TBLMusteri> TBLMusteri { get; set; }
-        public virtual DbSet<TBLPersonel> TBLPersonel { get; set; }
         public virtual DbSet<TBLSatislar> TBLSatislar { get; set; }
         public virtual DbSet<TBLUrunler> TBLUrunler { get; set; }
+        public virtual DbSet<TBLPersonel> TBLPersonel { get; set; }
+        public virtual DbSet<TBLAdmin> TBLAdmin { get; set; }
     }
 }

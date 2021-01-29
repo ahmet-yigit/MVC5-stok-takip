@@ -81,3 +81,7 @@ E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\EntityFramework.dll
 E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\EntityFramework.SqlServer.dll
 E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\EntityFramework.xml
 E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\EntityFramework.SqlServer.xml
+E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\PagedList.dll
+E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\PagedList.Mvc.dll
+E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\PagedList.xml
+E:\.net_core_app\MVCStokTakip\MVCStokTakip\bin\PagedList.Mvc.xml
